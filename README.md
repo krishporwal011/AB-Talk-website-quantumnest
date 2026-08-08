@@ -1,352 +1,395 @@
-<!--
-╔══════════════════════════════════════════════════════════════╗
-║                    ABTALKS 60-DAY CHALLENGE                 ║
-║              BUILD • SHIP • SHARE • GROW                    ║
-╚══════════════════════════════════════════════════════════════╝
--->
+<!-- ========================================================= -->
+<!--                    ABTALKS README                         -->
+<!-- ========================================================= -->
 
-<p align="center">
+<div align="center">
 
-<!-- Replace with your preferred animated neon banner -->
-<img
-  src="YOUR_ANIMATED_NEON_BANNER_URL"
-  alt="ABTalks 60-Day Challenge"
-  width="100%"
-/>
+# ⚡ ABTALKS
 
-</p>
+### 60-DAY CODING CHALLENGE
 
-<p align="center">
+**BUILD EVERY DAY. SHIP YOUR WORK. MAKE YOUR PROGRESS VISIBLE.**
 
-<img src="YOUR_ANIMATED_TYPING_SVG_URL" alt="ABTalks Typing Animation" />
+<br />
 
-</p>
+![Status](https://img.shields.io/badge/STATUS-ACTIVE%20MVP-00E5FF?style=for-the-badge&labelColor=050505)
 
-<p align="center">
+![Next.js](https://img.shields.io/badge/NEXT.JS-16.3-FFFFFF?style=for-the-badge&logo=next.js&logoColor=white&labelColor=050505)
 
-<strong>
-⚡ Build Every Day • 🔥 Protect Your Streak • 💻 Ship Real Work • 🚀 Get Noticed
-</strong>
+![React](https://img.shields.io/badge/REACT-19-61DAFB?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=050505)
 
-</p>
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=050505)
 
-<p align="center">
+![Tailwind](https://img.shields.io/badge/TAILWIND-CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=050505)
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.3.0-000000?style=for-the-badge&logo=next.js&logoColor=white)](#)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
-[![Tailwind](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#)
-[![Framer Motion](https://img.shields.io/badge/Framer-Motion-8B5CF6?style=for-the-badge&logo=framer&logoColor=white)](#)
-[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-111111?style=for-the-badge)](#)
+![Framer Motion](https://img.shields.io/badge/FRAMER-MOTION-8B5CF6?style=for-the-badge&logo=framer&logoColor=white&labelColor=050505)
 
-</p>
+</div>
 
 ---
 
-# ⚡ ABTalks 60-Day Challenge
+<div align="center">
 
-> **What if becoming a better developer was not about learning more... but building every single day?**
+## `LEARN → BUILD → COMMIT → SHARE → PROVE → REPEAT`
 
-ABTalks is a futuristic, gamified **60-Day Coding Challenge platform** designed for student developers who want to turn daily coding into a visible, measurable and consistent journey.
-
-Instead of:
-
-```text
-Watch Tutorial
-      ↓
-Take Notes
-      ↓
-Forget
-      ↓
-Repeat
-```
-
-ABTalks encourages:
-
-```text
-LEARN
-  ↓
-BUILD
-  ↓
-COMMIT
-  ↓
-SHARE
-  ↓
-SUBMIT PROOF
-  ↓
-EARN XP
-  ↓
-MAINTAIN STREAK
-  ↓
-BUILD PORTFOLIO
-```
-
-### The philosophy
-
-> **Don't just learn code. Build proof that you can build.**
+</div>
 
 ---
 
 # 🌌 What is ABTalks?
 
-ABTalks runs a structured **60-day coding challenge** where students build something every day.
+**ABTalks 60-Day Challenge** is a futuristic, gamified coding platform designed to help student developers turn daily coding into a consistent habit and a visible portfolio of real work.
 
-Each day becomes a small piece of a much larger developer journey.
+The core idea is simple:
 
-Students are encouraged to:
+> **Don't just learn code. Build proof that you can build.**
 
-- 💻 Build real projects
-- 🔥 Maintain a coding streak
-- 🐙 Push work to GitHub
-- 💼 Share learning on LinkedIn
-- 🧠 Learn by building
+Instead of spending months consuming tutorials, students complete a structured challenge every day.
+
+Each day encourages the student to:
+
+- 💻 Build something
+- 🐙 Commit the work to GitHub
+- 💼 Share the learning on LinkedIn
+- 🌐 Deploy the project
+- 📸 Submit proof of work
 - ⚡ Earn XP
+- 🔥 Maintain a streak
 - 🏆 Unlock achievements
-- 📊 Track momentum
-- 🚀 Build a public proof-of-work portfolio
-
-The result:
-
-```text
-60 Days
-   ↓
-60 Builds
-   ↓
-60 Proofs
-   ↓
-1 Stronger Developer
-```
+- 📊 Track progress
+- 🚀 Build a public developer identity
 
 ---
 
 # 🧠 The Problem
 
-Most students don't struggle because learning resources are unavailable.
+Modern students have access to more learning resources than ever.
 
-They struggle with:
+The problem isn't always **access to knowledge**.
 
-```text
-Tutorial Hell
-      ↓
-Inconsistent Practice
-      ↓
-Unfinished Projects
-      ↓
-No Public Proof
-      ↓
-Weak Portfolio
-      ↓
-Low Visibility
-```
+The problem is **consistency and proof**.
 
-ABTalks attacks the problem at the habit level.
-
-Instead of asking:
-
-> "How many courses did you complete?"
-
-ABTalks asks:
-
-> **"What did you build today?"**
-
----
-
-# 💡 The ABTalks Approach
-
-The platform combines:
+A common learning cycle looks like:
 
 ```text
-Daily Challenges
-       +
-Gamification
-       +
-Public Proof of Work
-       +
-Progress Tracking
-       +
-Developer Identity
-       =
-Consistent Building
+Tutorial
+   ↓
+Notes
+   ↓
+Another Tutorial
+   ↓
+Small Practice
+   ↓
+Abandoned Project
+   ↓
+Start Again
 ```
 
-The goal isn't to make students addicted to a leaderboard.
-
-The goal is to make **building a habit**.
-
----
-
-# 🔥 Core Product Experience
-
-## 01 — Discover
-
-A cinematic landing page introduces the challenge.
+ABTalks changes the loop:
 
 ```text
-60 DAYS.
-
-60 BUILDS.
-
-ONE JOURNEY.
+Learn
+  ↓
+Build
+  ↓
+Commit
+  ↓
+Share
+  ↓
+Submit Proof
+  ↓
+Get Feedback
+  ↓
+Earn XP
+  ↓
+Maintain Streak
+  ↓
+Build Portfolio
+  ↓
+Repeat
 ```
+
+The goal is to transform:
+
+**Learning → Building**
+
+and eventually:
+
+**Building → Proof → Opportunity**
 
 ---
 
-## 02 — Commit
+# 🚀 Product Vision
 
-Students see today's challenge and commit to completing it.
+ABTalks is designed around one question:
+
+> **What if a student's 60 days of coding could become their strongest proof of ability?**
+
+At the end of the challenge, the student should not only have:
 
 ```text
-TODAY'S MISSION
-
-DAY 12
-
-Build a High-Performance
-Motion System
-
-+150 XP
+60 days completed
 ```
 
----
-
-## 03 — Build
-
-The student completes the challenge.
-
-The challenge includes:
-
-- Objective
-- Requirements
-- Learning goals
-- Resources
-- Checklist
-- Expected outcome
-
----
-
-## 04 — Prove
-
-Students submit:
+but ideally:
 
 ```text
-GitHub Repository
-        +
-Git Commit
-        +
-LinkedIn Post
-        +
-Live Deployment
+60 builds
++
+GitHub commits
++
+Public learning posts
++
+Deployments
++
+Proof of work
++
+Developer habits
 ```
+
+That becomes a much stronger developer story than a list of completed courses.
 
 ---
 
-## 05 — Grow
+# ✨ Core Experience
 
-Successful completion updates:
+## 01 — Landing Page
+
+### `/`
+
+The landing page is the first experience for a student who has never heard of ABTalks.
+
+It communicates:
+
+- What ABTalks is
+- Why the 60-day challenge exists
+- How the challenge works
+- What students build
+- Why public proof matters
+- How progress is tracked
+- Why consistency matters
+
+The experience uses:
+
+- Cinematic hero section
+- Scroll-driven storytelling
+- Sticky story chapters
+- Animated typography
+- Parallax visuals
+- Glassmorphism
+- Neon lighting
+- Interactive cards
+- Motion transitions
+- Testimonials
+- FAQ modules
+- Calls to action
+
+---
+
+## 02 — Student Dashboard
+
+### `/dashboard`
+
+The dashboard acts as the student's personal developer command center.
+
+It includes:
 
 ```text
-XP
-Streak
-Progress
-Momentum
-Achievements
-Portfolio
+🔥 Current Streak
+
+⚡ Total XP
+
+📡 Momentum
+
+🎯 Today's Mission
+
+🧩 60-Day Habit Matrix
+
+📊 Weekly Coding Activity
+
+🏆 Achievements
+
+👥 Cohort Standing
+```
+
+The dashboard is designed to answer three questions immediately:
+
+> **Where am I?**
+
+> **What do I need to build today?**
+
+> **How am I progressing?**
+
+---
+
+## 03 — Challenge Day
+
+### `/day/[id]`
+
+The challenge page represents the complete experience of a single challenge day.
+
+Example:
+
+### `/day/12`
+
+The student can:
+
+- Read the challenge
+- Understand the objective
+- Review requirements
+- Complete the checklist
+- Submit GitHub repository
+- Submit commit/diff
+- Submit LinkedIn post
+- Submit live deployment
+- Upload proof
+- Submit the challenge
+- Receive simulated verification
+- Claim XP
+- Update streak
+
+---
+
+# 🎯 The Daily Challenge Loop
+
+```text
+┌─────────────────────┐
+│   TODAY'S MISSION   │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│   UNDERSTAND TASK   │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│       BUILD         │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│    GITHUB COMMIT    │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│   SHARE ON LINKEDIN │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│    SUBMIT PROOF     │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│    VERIFY / AUDIT   │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│     +150 XP ⚡      │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│   STREAK UPDATED 🔥 │
+└──────────┬──────────┘
+           ↓
+        NEXT DAY
 ```
 
 ---
 
-# 🚀 Product Highlights
+# 🖥️ Product Screens
+
+## 🏠 Landing Page
+
+<p align="center">
+  <img
+    src="docs/screenshots/landing.png"
+    alt="ABTalks Landing Page"
+    width="900"
+  />
+</p>
+
+---
+
+## 📊 Student Dashboard
+
+<p align="center">
+  <img
+    src="docs/screenshots/dashboard.png"
+    alt="ABTalks Student Dashboard"
+    width="900"
+  />
+</p>
+
+---
+
+## 🎯 Challenge Day
+
+<p align="center">
+  <img
+    src="docs/screenshots/challenge.png"
+    alt="ABTalks Challenge Day"
+    width="900"
+  />
+</p>
+
+> **Tip:** Replace these three images with screenshots captured from your actual deployed website. Real product screenshots make the README much stronger than generic stock images.
+
+---
+
+# 🔥 Feature Overview
 
 | Feature | Description |
 |---|---|
-| 🔥 60-Day Streak | Visual daily consistency tracker |
+| 🔥 60-Day Streak | Tracks daily coding consistency |
 | ⚡ XP Engine | Rewards challenge completion |
-| 🏆 Achievements | Milestone-based progression |
-| 📡 Momentum | Measures consistency beyond streaks |
-| 🐙 GitHub Proof | Repository & commit submission |
+| 🏆 Achievements | Unlocks milestone rewards |
+| 🧩 Habit Matrix | Visualizes all 60 challenge days |
+| 📡 Momentum | Measures progress beyond a simple streak |
+| 🐙 GitHub Proof | Repository and commit submission |
 | 💼 LinkedIn Proof | Public learning submission |
-| 🌐 Live Proof | Deployment URL submission |
-| 🧩 Habit Matrix | Interactive 60-day journey |
-| 🎮 Command Palette | Fast keyboard-driven controls |
-| 📊 Analytics | Coding activity visualization |
-| 🧪 Edge States | Offline, missed day, empty profile etc. |
-| 🎬 Motion UI | Cinematic scroll-driven experience |
-| 📱 Mobile First | Optimized for 390px experience |
+| 🌐 Live Deployment | Deployment URL submission |
+| 🤖 AST Audit | Simulated code-quality verification |
+| 🎮 Command Palette | Keyboard-driven application controls |
+| 🔔 Notifications | Interactive notification system |
+| 📊 Analytics | Weekly coding activity visualization |
+| 👥 Leaderboard | Cohort standing |
+| 📱 Mobile First | Designed for small-screen usage |
+| 🧪 Edge Cases | Offline, missed day, empty profile and more |
 
 ---
 
-# 📡 Momentum Engine
+# 📡 Momentum Telemetry
 
-One of the core ideas behind ABTalks is:
+A traditional streak answers:
 
-> **A streak tells you how long you've continued. Momentum tells you how you're actually moving.**
+> **How long have you continued?**
 
-The prototype calculates a visual momentum index using multiple signals.
+ABTalks introduces another question:
 
-```text
-┌─────────────────────────────┐
-│                             │
-│          MOMENTUM            │
-│                             │
-│            87%              │
-│                             │
-├─────────────────────────────┤
-│ Consistency Health     94%  │
-│ GitHub Activity        89%  │
-│ Learning Velocity      85%  │
-│ Proof of Work          92%  │
-└─────────────────────────────┘
-```
+> **How strong is your current momentum?**
 
-This creates a richer feedback loop than simply displaying:
+The prototype visualizes momentum using multiple signals:
 
 ```text
-🔥 18 Days
+                    MOMENTUM
+
+                      87%
+
+        ┌──────────────────────────┐
+        │                          │
+        │  Consistency Health  94% │
+        │  GitHub Activity     89% │
+        │  Learning Velocity   85% │
+        │  Proof of Work       92% │
+        │                          │
+        └──────────────────────────┘
 ```
 
----
-
-# 🏆 Gamification System
-
-ABTalks uses lightweight gamification to encourage progress.
-
-### XP
-
-Students receive XP after completing challenges.
-
-```text
-Challenge Completed
-       ↓
-+150 XP
-```
-
-### Streak
-
-```text
-Day 01 🔥
-Day 02 🔥
-Day 03 🔥
-...
-Day 18 🔥
-```
-
-### Achievements
-
-Example milestones:
-
-```text
-🚀 First Build
-🔥 7-Day Streak
-⚡ Speed Coder
-💻 10 GitHub Commits
-🌙 Night Owl
-🏆 30-Day Warrior
-```
+This creates a broader progress signal than a simple streak counter.
 
 ---
 
 # 🧩 60-Day Habit Matrix
 
-The challenge is visualized through a 60-node journey.
+The challenge is represented as a visual 60-day journey.
 
 ```text
 01 ✓   02 ✓   03 ✓   04 ✓   05 ✓   06 ✓
@@ -357,60 +400,228 @@ The challenge is visualized through a 60-node journey.
 
 19     20     21     22     23     24
 
-...
+25     26     27     28     29     30
+
+31     32     33     34     35     36
+
+37     38     39     40     41     42
+
+43     44     45     46     47     48
+
+49     50     51     52     53     54
 
 55     56     57     58     59     60
 ```
 
-Each state communicates:
+Node states communicate:
 
-🟢 Completed  
-⚪ Current  
-🔵 Upcoming  
-🔴 Missed  
-🔒 Locked
+- 🟢 Completed
+- ⚪ Current
+- 🔵 Upcoming
+- 🔴 Missed
+- 🔒 Locked
+
+The goal is to make progress visually obvious.
 
 ---
 
-# 🎬 Cinematic UI
+# 🏆 XP & Achievement System
 
-ABTalks isn't designed like a traditional dashboard.
+Completing a challenge rewards the student.
 
-The landing page uses:
-
-- Sticky storytelling
-- Scroll-driven text
-- Parallax
-- Animated typography
-- Magnetic buttons
-- Glass surfaces
-- Ambient lighting
-- Canvas visuals
-- Motion transitions
-- Interactive cards
-- Cinematic section transitions
-
-The visual direction is inspired by modern product experiences while maintaining an original ABTalks identity.
-
-### Design principle
+Example:
 
 ```text
-Animation
-    ≠
-Decoration
+MISSION COMPLETE
 
-Animation
-    =
-Feedback + Storytelling + Hierarchy
++150 XP
+
+🔥 STREAK +1
+
+🏆 ACHIEVEMENT CHECK
+```
+
+Potential milestones include:
+
+```text
+🚀 First Build
+🔥 7-Day Streak
+⚡ Speed Coder
+💻 GitHub Builder
+🌙 Night Owl
+🏆 30-Day Warrior
+👑 60-Day Legend
 ```
 
 ---
 
-# 🌑 Visual Identity
+# 🤖 Proof-of-Work System
 
-ABTalks uses a dark futuristic visual environment.
+ABTalks is built around the concept of **visible proof**.
 
-### Base
+A student can submit:
+
+```text
+GitHub Repository
+        +
+Git Commit / Diff
+        +
+LinkedIn Post
+        +
+Live Deployment
+        +
+Screenshot
+        +
+Learning Notes
+```
+
+The current prototype validates these inputs on the client side.
+
+---
+
+# 🧠 Simulated Verification
+
+The challenge completion flow includes a simulated audit experience.
+
+```text
+SUBMISSION RECEIVED
+        ↓
+Connecting AST Scanner...
+        ↓
+Checking Git Commit...
+        ↓
+Auditing Code Quality...
+        ↓
+Checking Proof of Work...
+        ↓
+Verification Complete ✓
+        ↓
++150 XP
+        ↓
+STREAK UPDATED
+```
+
+### Important
+
+The current AST scanner is a **frontend simulation**.
+
+Real GitHub API verification, webhooks and production code analysis are planned for future versions.
+
+---
+
+# 🎮 Command Palette
+
+The application includes a global command palette.
+
+### macOS
+
+```text
+⌘ + K
+```
+
+### Windows / Linux
+
+```text
+Ctrl + K
+```
+
+The command palette provides:
+
+- Navigation
+- Challenge shortcuts
+- Simulation controls
+- XP testing
+- Achievement testing
+- Application actions
+
+Keyboard support:
+
+```text
+↑      Navigate
+↓      Navigate
+Enter  Execute
+Esc    Close
+```
+
+---
+
+# 🔔 Notification System
+
+The global navigation includes an interactive notification drawer.
+
+Features:
+
+- Notification list
+- Read / unread state
+- Unread counter
+- Filter tabs
+- Mark all as read
+- Responsive mobile drawer
+
+---
+
+# 🎬 Motion System
+
+Motion is not used only as decoration.
+
+It is used to communicate:
+
+- Progress
+- Hierarchy
+- Interaction
+- State changes
+- Completion
+- Navigation
+
+The application uses:
+
+```text
+Framer Motion
+      +
+CSS Animations
+      +
+HTML5 Canvas
+      +
+Scroll Transforms
+      +
+Spring Physics
+```
+
+Implemented motion components include:
+
+```text
+CustomCursor
+MagneticButton
+ScrollProgress
+ScrollRevealText
+StickyStory
+```
+
+---
+
+# 🌌 Visual Language
+
+ABTalks follows a futuristic developer-console aesthetic.
+
+### Design Keywords
+
+```text
+Futuristic
+Dark
+Cinematic
+Glassmorphic
+Neon
+Developer-focused
+Minimal
+Interactive
+Mobile-first
+```
+
+---
+
+# 🎨 Color System
+
+### Background
 
 ```text
 Obsidian
@@ -423,7 +634,7 @@ Glass
 rgba(11, 13, 16, 0.65)
 ```
 
-### Primary
+### Primary Accents
 
 ```text
 Electric Purple
@@ -436,7 +647,7 @@ Violet
 #8B5CF6
 ```
 
-### Secondary
+### Secondary Accents
 
 ```text
 Cyan
@@ -466,7 +677,7 @@ Rose
 
 # ✍️ Typography
 
-### Display
+### Headings
 
 **Outfit**
 
@@ -486,33 +697,33 @@ Used for:
 - Navigation
 - Cards
 - Forms
-- Descriptions
 - Dashboard
+- Descriptions
 
-### Technical
+### Technical UI
 
 Monospace typography is used for:
 
-- Telemetry
 - Developer labels
-- Code-related content
-- Technical indicators
+- Telemetry
+- Code indicators
+- System states
 
 ---
 
-# 📱 Mobile-First
+# 📱 Mobile-First Design
 
-ABTalks is designed for students who often use the platform:
+ABTalks is specifically designed for students who may use the platform:
 
-> **late at night, from their phones, after college.**
+> **late at night, after college, primarily from their phones.**
 
-Primary design target:
+Primary mobile target:
 
 ```text
 390px
 ```
 
-Responsive targets:
+Tested design targets:
 
 ```text
 320px
@@ -529,107 +740,238 @@ Responsive targets:
 
 Mobile experience includes:
 
-- Compact header
+- Compact navigation
 - Floating bottom navigation
 - Touch-friendly controls
+- Responsive cards
 - Single-column dashboard
-- Responsive habit matrix
-- Mobile submission form
-- Safe-area support
+- Responsive 60-day matrix
+- Mobile submission forms
+- Safe-area handling
 - Reduced visual effects
 - Mobile-specific navigation composition
 
 ---
 
-# 🗺️ Application Routes
+# 🏗️ System Architecture
 
-| Route | Experience |
+```mermaid
+flowchart TD
+
+    A[Browser] --> B[Next.js Root Layout]
+
+    B --> C[Challenge Provider]
+
+    C --> D[Global UI]
+    C --> E[Application Routes]
+    C --> F[Client Persistence]
+
+    D --> D1[Navbar]
+    D --> D2[Bottom Navigation]
+    D --> D3[Command Palette]
+    D --> D4[Background Canvas]
+    D --> D5[Custom Cursor]
+    D --> D6[Scroll Progress]
+
+    E --> E1[Landing Page /]
+    E --> E2[Dashboard /dashboard]
+    E --> E3[Challenge /day/id]
+
+    E1 --> G[Story System]
+    E1 --> H[Motion System]
+    E1 --> I[Habit Matrix]
+
+    E2 --> I
+    E2 --> J[Momentum]
+    E2 --> K[Analytics]
+    E2 --> L[Leaderboard]
+
+    E3 --> M[Challenge Task]
+    E3 --> N[Checklist]
+    E3 --> O[Proof Submission]
+    E3 --> P[AST Simulation]
+    E3 --> Q[Celebration]
+
+    F --> R[localStorage]
+
+    R --> R1[abtalks_xp]
+    R --> R2[abtalks_streak]
+    R --> R3[abtalks_completed]
+    R --> R4[abtalks_submission]
+```
+
+---
+
+# 🧱 Component Architecture
+
+```text
+src/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   │
+│   ├── dashboard/
+│   │   └── page.tsx
+│   │
+│   └── day/
+│       └── [id]/
+│           └── page.tsx
+│
+├── components/
+│   │
+│   ├── motion/
+│   │   ├── CustomCursor.tsx
+│   │   ├── MagneticButton.tsx
+│   │   ├── ScrollProgress.tsx
+│   │   ├── ScrollRevealText.tsx
+│   │   └── StickyStory.tsx
+│   │
+│   └── shared/
+│       ├── BackgroundEffect.tsx
+│       ├── BottomNav.tsx
+│       ├── CommandPalette.tsx
+│       └── Navbar.tsx
+│
+└── context/
+    └── ChallengeContext.tsx
+```
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Role |
 |---|---|
-| `/` | Cinematic landing page |
-| `/dashboard` | Student developer studio |
+| **Next.js 16.3** | Framework & routing |
+| **React 19** | UI architecture |
+| **TypeScript 5** | Type safety |
+| **Tailwind CSS 4** | Utility styling |
+| **Framer Motion 13** | Motion & physics |
+| **Lucide React** | Icons |
+| **React Hook Form** | Form handling |
+| **HTML5 Canvas** | Background effects |
+| **React Context API** | Global state |
+| **localStorage** | Browser persistence |
+| **ESLint 9** | Code quality |
+| **npm** | Package management |
+| **Vercel** | Deployment target |
+
+---
+
+# 💾 State Management
+
+The current MVP intentionally operates without a production backend.
+
+```text
+React Context
+      ↓
+ChallengeContext
+      ↓
+Application State
+      ↓
+Browser localStorage
+```
+
+Current storage keys:
+
+```text
+abtalks_xp
+
+abtalks_streak
+
+abtalks_completed
+
+abtalks_submission
+```
+
+### Example
+
+```text
+abtalks_xp
+→ Integer
+
+abtalks_streak
+→ Current streak
+
+abtalks_completed
+→ Completed challenge days
+
+abtalks_submission
+→ Submission metadata
+```
+
+---
+
+# 🧪 Edge-Case Simulation
+
+The application contains simulation states for testing real-world scenarios.
+
+```text
+isOffline
+isLoading
+isEmptyProfile
+hasNoStreak
+hasMissedDay
+```
+
+This allows the product to be tested as:
+
+```text
+New Student
+    ↓
+First Day
+    ↓
+Active Streak
+    ↓
+Missed Day
+    ↓
+Recovery
+    ↓
+Challenge Completion
+```
+
+without requiring a production backend.
+
+---
+
+# 🗺️ Route Map
+
+| Route | Purpose |
+|---|---|
+| `/` | Landing page |
+| `/dashboard` | Student dashboard |
 | `/day/[id]` | Dynamic challenge page |
 | `/day/12` | Example challenge |
 
-### Required challenge routes
+### Required evaluation routes
 
 ```text
-/day/1
-/day/2
-/day/3
-...
-/day/60
+/
+/dashboard
+/day/12
 ```
 
 ---
 
-# 🏗️ Architecture
-
-```text
-                    ABTalks
-                       │
-                       ▼
-                 Root Layout
-                       │
-                       ▼
-               Challenge Provider
-                       │
-        ┌──────────────┼──────────────┐
-        ▼              ▼              ▼
-      Landing       Dashboard      Challenge
-        │              │              │
-        ▼              ▼              ▼
-   Story System     Habit Matrix    Task System
-   Motion System    Momentum        Proof Form
-   Card Deck        Analytics       AST Simulation
-   FAQ             Leaderboard      Celebration
-        │              │              │
-        └──────────────┼──────────────┘
-                       ▼
-                Browser Storage
-                       │
-                       ▼
-                  localStorage
-```
-
----
-
-# 🛠️ Technology Stack
-
-### Frontend
-
-| Technology | Purpose |
-|---|---|
-| Next.js 16 | Application framework |
-| React 19 | UI architecture |
-| TypeScript 5 | Type safety |
-| Tailwind CSS 4 | Styling |
-| Framer Motion | Animation & physics |
-| Lucide React | Icons |
-| React Hook Form | Form management |
-| HTML5 Canvas | Animated background |
-
-### State
-
-```text
-React Context API
-        +
-localStorage
-```
-
-### Deployment
-
-```text
-Vercel
-```
-
----
-
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 AB-Talk-Website/
 │
 ├── public/
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+│
+├── docs/
+│   └── screenshots/
+│       ├── landing.png
+│       ├── dashboard.png
+│       └── challenge.png
 │
 ├── src/
 │   │
@@ -641,6 +983,7 @@ AB-Talk-Website/
 │   │   │   └── [id]/
 │   │   │       └── page.tsx
 │   │   │
+│   │   ├── favicon.ico
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx
@@ -671,214 +1014,165 @@ AB-Talk-Website/
 ├── package-lock.json
 ├── postcss.config.mjs
 ├── README.md
-└── tsconfig.json
+├── tsconfig.json
+└── next-env.d.ts
 ```
 
 ---
 
-# 🧠 State Architecture
+# ⚙️ Getting Started
 
-The current MVP intentionally avoids a production backend.
+## Requirements
+
+Make sure the following are installed:
 
 ```text
-React Context
-      ↓
-ChallengeContext
-      ↓
-Application State
-      ↓
-localStorage
+Node.js 18.17+
+npm 9+
+Git
 ```
 
-Stored values include:
+Check versions:
 
-```text
-abtalks_xp
-abtalks_streak
-abtalks_completed
-abtalks_submission
-```
-
-This allows the prototype to behave like a persistent application without requiring authentication or a database.
-
----
-
-# 🧪 Edge-Case Simulator
-
-ABTalks includes built-in simulation states to test the product experience.
-
-```text
-isOffline
-isLoading
-isEmptyProfile
-hasNoStreak
-hasMissedDay
-```
-
-This makes it possible to test:
-
-```text
-New Student
-     ↓
-First Day
-     ↓
-Active Streak
-     ↓
-Missed Day
-     ↓
-Recovery
-     ↓
-Challenge Completion
-```
-
-without creating multiple real accounts.
-
----
-
-# ⌘ Command Palette
-
-Press:
-
-```text
-⌘ K
-```
-
-or:
-
-```text
-Ctrl + K
-```
-
-to open the command palette.
-
-It provides access to:
-
-- Navigation
-- Simulation states
-- XP controls
-- Achievement testing
-- Application actions
-
-Keyboard controls:
-
-```text
-↑  Navigate
-↓  Navigate
-Enter  Execute
-Esc  Close
+```bash
+node -v
+npm -v
+git --version
 ```
 
 ---
 
-# 🔔 Notification System
+## Clone
 
-The global interface includes:
-
-- Notification drawer
-- Read/unread states
-- Unread counter
-- Filtering
-- Mark-all-read interaction
-- Responsive mobile behavior
-
----
-
-# 🧑‍💻 Challenge Submission
-
-Each challenge allows students to submit their proof of work.
-
-```text
-GitHub Repository
-        ↓
-Git Commit / Diff
-        ↓
-LinkedIn Post
-        ↓
-Live Deployment
-        ↓
-Screenshot
-        ↓
-Learning Notes
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-The prototype performs client-side validation.
+Then enter the project directory:
+
+```bash
+cd AB-Talk-Website
+```
 
 ---
 
-# 🤖 Verification Pipeline
+## Install
 
-The current prototype provides a simulated verification experience.
+```bash
+npm install
+```
+
+---
+
+## Development
+
+```bash
+npm run dev
+```
+
+Open the application at:
 
 ```text
-SUBMIT
+http://localhost:3000
+```
+
+---
+
+# 🌐 Routes
+
+### Landing
+
+```text
+/
+```
+
+### Dashboard
+
+```text
+/dashboard
+```
+
+### Challenge
+
+```text
+/day/12
+```
+
+---
+
+# 🏭 Production Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Start production mode:
+
+```bash
+npm run start
+```
+
+---
+
+# 🧹 Lint
+
+Run:
+
+```bash
+npm run lint
+```
+
+---
+
+# ☁️ Deployment
+
+ABTalks is designed for deployment on Vercel.
+
+Deployment flow:
+
+```text
+GitHub
    ↓
-Connecting AST Scanner...
+Vercel
    ↓
-Checking Git Commit...
+Detect Next.js
    ↓
-Auditing Code Quality...
+Install Dependencies
    ↓
-Checking Proof...
+next build
    ↓
-VERIFIED ✓
-   ↓
-+150 XP
-   ↓
-🔥 STREAK UPDATED
+Deploy
 ```
 
-> **Note:** The AST scanner and proof verification are currently simulated frontend workflows. Real GitHub/LinkedIn verification is planned for future versions.
+No production environment variables are currently required for the frontend MVP.
 
 ---
 
-# 🎉 Completion Experience
+# ⚡ Performance
 
-Challenge completion triggers a reward sequence:
+ABTalks contains a significant amount of animation and visual effects.
 
-```text
-DAY 12 COMPLETE
-       ↓
-+150 XP
-       ↓
-🔥 STREAK +1
-       ↓
-🏆 ACHIEVEMENT UNLOCKED
-       ↓
-CONTINUE TO NEXT DAY
-```
+Performance is therefore treated as a core product requirement.
 
-The interface uses subtle:
-
-- Spring animation
-- Confetti
-- Number transitions
-- Glow
-- Success states
-
-to make completion feel rewarding without slowing down the user.
-
----
-
-# ⚡ Performance Philosophy
-
-ABTalks contains a large amount of motion.
-
-Therefore performance is treated as a feature.
-
-The application prioritizes:
+The implementation uses:
 
 - GPU-friendly transforms
-- Opacity animations
+- Opacity-based transitions
 - `requestAnimationFrame`
-- Efficient canvas rendering
-- Reduced-motion support
+- HTML5 Canvas
+- Framer Motion
 - Responsive animation
-- Lightweight state updates
-- Mobile-specific visual optimization
+- Reduced-motion support
+- Component-level motion
+- Mobile-specific optimization
 
-The design goal is:
+### Design principle
 
 > **Make it feel animated, not slow.**
+
+Heavy visual effects are reduced on smaller screens where appropriate.
 
 ---
 
@@ -891,11 +1185,12 @@ The application includes:
 - ARIA labels
 - Accessible controls
 - Focus states
+- Touch-friendly interactions
 - Reduced-motion support
-- Touch-friendly targets
-- Responsive layouts
+- Keyboard command palette
+- Escape-key dismissal
 
-Motion can be reduced through:
+Motion can be reduced using:
 
 ```text
 prefers-reduced-motion
@@ -905,37 +1200,79 @@ prefers-reduced-motion
 
 # 🔐 Security
 
-Current prototype contains:
+The current MVP contains:
 
-- No API secrets
-- No database credentials
-- No private keys
-- No authentication tokens
+- No private API keys
+- No database passwords
+- No authentication secrets
+- No private tokens
 
-External links use secure target handling.
+External links are configured with secure target handling.
 
 User-submitted URLs are validated before the submission workflow proceeds.
 
 ---
 
-# ⚠️ Current MVP Limitations
+# 🗄️ Backend Status
 
-ABTalks is currently a **frontend MVP / functional prototype**.
+The current version is intentionally frontend-first.
 
-### Not yet connected
+### Current
 
 ```text
-❌ Production Authentication
-❌ Production Database
-❌ Real GitHub Webhooks
-❌ Real LinkedIn Verification
-❌ Production AST Analysis
-❌ Recruiter Dashboard
-❌ Server-side Submission Storage
-❌ Automated E2E Testing
+React
+   ↓
+Context API
+   ↓
+localStorage
 ```
 
-The current version intentionally uses mocked/simulated systems so the complete product experience can be demonstrated without backend infrastructure.
+### Not currently connected
+
+```text
+❌ Production API
+❌ Production Database
+❌ Authentication
+❌ GitHub Webhooks
+❌ LinkedIn API
+❌ Server-side verification
+```
+
+This allows the complete product experience to be demonstrated without requiring backend infrastructure.
+
+---
+
+# ⚠️ Current Limitations
+
+ABTalks is currently a:
+
+> **Frontend MVP / Functional Prototype**
+
+The following systems are simulated:
+
+### Authentication
+
+User profiles are simulated.
+
+### AST Verification
+
+The scanner is a frontend simulation.
+
+### Proof Verification
+
+GitHub and LinkedIn URLs are validated client-side.
+
+### Database
+
+No production database is connected.
+
+### Recruiter Platform
+
+Recruiter-facing infrastructure is not currently implemented.
+
+### Automated Testing
+
+A dedicated automated testing framework is not currently configured.
 
 ---
 
@@ -947,56 +1284,62 @@ The current version intentionally uses mocked/simulated systems so the complete 
 - [x] Dashboard
 - [x] Challenge Page
 - [x] 60-Day Matrix
+- [x] Streak Engine
 - [x] XP System
-- [x] Streak System
+- [x] Achievement System
 - [x] Momentum System
-- [x] Achievements
-- [x] Proof Submission UI
+- [x] Proof Submission
 - [x] Command Palette
 - [x] Notifications
-- [x] Responsive Navigation
-- [x] Edge-Case Simulator
+- [x] Mobile Navigation
+- [x] Responsive Layout
+- [x] Edge-Case Simulation
 - [x] localStorage Persistence
 
 ---
 
-## Phase 02 — Real Accounts
+## Phase 02 — Authentication
 
 - [ ] GitHub OAuth
 - [ ] LinkedIn Authentication
+- [ ] Email Authentication
 - [ ] Student Profiles
 - [ ] Secure Sessions
-- [ ] Persistent User Data
+- [ ] Account Recovery
 
 ---
 
 ## Phase 03 — Backend
 
-- [ ] API
+- [ ] Production API
 - [ ] PostgreSQL
-- [ ] Submission Database
+- [ ] User Database
 - [ ] Challenge Database
-- [ ] Achievement Persistence
+- [ ] Submission Storage
 - [ ] Server-side Streak Engine
+- [ ] Achievement Persistence
 
 ---
 
-## Phase 04 — Real Proof
+## Phase 04 — Real Verification
 
 - [ ] GitHub API
-- [ ] GitHub Commit Verification
-- [ ] Webhooks
+- [ ] Commit Verification
+- [ ] GitHub Webhooks
+- [ ] Repository Verification
 - [ ] LinkedIn Verification
-- [ ] Live Deployment Verification
-- [ ] Real Code Analysis
+- [ ] Deployment Verification
+- [ ] Real AST / Code Analysis
 
 ---
 
-## Phase 05 — More Tracks
+## Phase 05 — Learning Tracks
+
+Future tracks:
 
 ```text
-Frontend
-Backend
+Frontend Engineering
+Backend Engineering
 Full Stack
 Python
 AI Agents
@@ -1009,12 +1352,12 @@ DevOps
 
 ## Phase 06 — Recruiter Ecosystem
 
-Future vision:
+Long-term vision:
 
 ```text
 Student
    ↓
-Verified Work
+Verified Projects
    ↓
 Coding Consistency
    ↓
@@ -1027,19 +1370,19 @@ Developer Profile
 Recruiter Discovery
 ```
 
-The long-term goal is to help recruiters discover students through **demonstrated ability**, not only resumes.
+The long-term goal is to help recruiters discover students based on **demonstrated ability**, not only resumes.
 
 ---
 
 # 🌟 What Makes ABTalks Different?
 
-Traditional learning platforms focus on:
+Traditional learning platforms often focus on:
 
 ```text
 COURSES
 VIDEOS
-CERTIFICATES
 QUIZZES
+CERTIFICATES
 ```
 
 ABTalks focuses on:
@@ -1052,144 +1395,120 @@ SHARE
 REPEAT
 ```
 
-The platform tries to convert:
+The platform is designed to transform:
 
-> **Learning → Evidence**
+```text
+Learning
+   ↓
+Practice
+   ↓
+Projects
+   ↓
+Proof
+   ↓
+Developer Identity
+```
 
-and:
+A student should finish the challenge with more than a number.
 
-> **Consistency → Identity**
+They should finish with a story:
 
-A student should finish 60 days with more than a streak.
-
-They should finish with a visible body of work.
+> **"Here is what I built."**
 
 ---
 
-# 📊 Product Success Loop
+# 📈 Success Loop
 
 ```text
-        ┌─────────────┐
-        │    LEARN    │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │    BUILD    │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │    SHIP     │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │    PROVE    │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │    SHARE    │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │   REFLECT   │
-        └──────┬──────┘
-               ↓
-        ┌─────────────┐
-        │   REPEAT    │
-        └──────┬──────┘
-               │
-               └──────────→ LEARN
-```
-
----
-
-# 🧭 Quick Start
-
-```bash
-# Clone
-git clone YOUR_REPOSITORY_URL
-
-# Enter project
-cd AB-Talk-Website
-
-# Install
-npm install
-
-# Development
-npm run dev
-
-# Production build
-npm run build
-
-# Production server
-npm run start
-
-# Lint
-npm run lint
-```
-
-Then open:
-
-```text
-/
-```
-
-Dashboard:
-
-```text
-/dashboard
-```
-
-Challenge:
-
-```text
-/day/12
+       ┌─────────────┐
+       │    LEARN    │
+       └──────┬──────┘
+              ↓
+       ┌─────────────┐
+       │    BUILD    │
+       └──────┬──────┘
+              ↓
+       ┌─────────────┐
+       │    SHIP     │
+       └──────┬──────┘
+              ↓
+       ┌─────────────┐
+       │    PROVE    │
+       └──────┬──────┘
+              ↓
+       ┌─────────────┐
+       │    SHARE    │
+       └──────┬──────┘
+              ↓
+       ┌─────────────┐
+       │   REFLECT   │
+       └──────┬──────┘
+              ↓
+       ┌─────────────┐
+       │   REPEAT    │
+       └──────┬──────┘
+              │
+              └──────────────→ LEARN
 ```
 
 ---
 
-# 📈 Project Status
+# 📊 Current Project Status
 
 ```text
-╔══════════════════════════════════════╗
-║          ABTALKS MVP STATUS          ║
-╠══════════════════════════════════════╣
-║ Frontend             ██████████ 100% ║
-║ UI/UX                ██████████ 100% ║
-║ Motion System        ██████████ 100% ║
-║ Challenge Flow       ██████████ 100% ║
-║ Local Persistence    ██████████ 100% ║
-║ Backend              ░░░░░░░░░░   0% ║
-║ Authentication       ░░░░░░░░░░   0% ║
-║ Real Verification    ░░░░░░░░░░   0% ║
-╚══════════════════════════════════════╝
+╔══════════════════════════════════════════════╗
+║              ABTALKS MVP STATUS              ║
+╠══════════════════════════════════════════════╣
+║                                              ║
+║  Frontend             ██████████  100%       ║
+║  UI / UX              ██████████  100%       ║
+║  Motion System        ██████████  100%       ║
+║  Challenge Flow       ██████████  100%       ║
+║  Local Persistence    ██████████  100%       ║
+║  Responsive UI       ██████████  100%       ║
+║                                              ║
+║  Backend              ░░░░░░░░░░    0%       ║
+║  Authentication       ░░░░░░░░░░    0%       ║
+║  Real Verification    ░░░░░░░░░░    0%       ║
+║                                              ║
+╚══════════════════════════════════════════════╝
 ```
 
-**Current Status:** 🟢 Active Frontend MVP
+**Status:** 🟢 Active Frontend MVP
 
 ---
 
-# 🧑‍💻 Built By
+# 🧑‍💻 Author
 
-## Krishna Porwal
+<div align="center">
 
-**Student Developer • AI Explorer • Practical Builder**
+## Krishna Porwal || Vaibhav arora || lakshay gupta
 
-Interested in:
+### Student Developer • AI Explorer • Practical Builder
+
+**Learning AI + Web Development By Doing**
+
+</div>
+
+Areas of interest:
 
 ```text
-AI
+Artificial Intelligence
 Web Development
 React
 Next.js
 Agentic AI
 Software Engineering
 Developer Tools
-Building Products
+Product Building
 Learning by Building
 ```
 
-> **I don't want to become a developer who only knows syntax.  
-> I want to become a builder who knows how to solve real problems.**
+### Developer Philosophy
+
+> **I don't want to become a developer who only knows syntax.**
+>
+> **I want to become a builder who knows how to solve real problems.**
 
 ---
 
@@ -1216,31 +1535,45 @@ A portfolio becomes proof.
 
 And proof gets noticed.
 
-        BUILD EVERY DAY.
-        SHIP YOUR WORK.
-        MAKE PROGRESS VISIBLE.
+       ┌───────────────────────────┐
+       │                           │
+       │      BUILD EVERY DAY      │
+       │                           │
+       │       SHIP YOUR WORK      │
+       │                           │
+       │   MAKE PROGRESS VISIBLE   │
+       │                           │
+       └───────────────────────────┘
 
-                    ⚡ ABTALKS
+                 ⚡ ABTALKS
 ```
 
 ---
 
-<p align="center">
+<div align="center">
 
-<strong>🔥 BUILD • SHIP • SHARE • GROW 🔥</strong>
+# 🔥 BUILD • SHIP • SHARE • GROW 🔥
+
+### ABTalks — 60-Day Coding Challenge
 
 <br />
 
-<sub>
-ABTalks — 60-Day Coding Challenge
-</sub>
+**60 DAYS · 60 BUILDS · ONE DEVELOPER JOURNEY**
 
-</p>
+<br />
+
+⭐ **If you like the project, consider starring the repository.**
+
+</div>
 
 ---
 
-<p align="center">
+## 📄 License
 
-⭐ If you like the idea, consider starring the repository.
+Copyright © ABTalks.
 
-</p>
+All rights reserved.
+
+This project is currently maintained as a product prototype / hackathon project.
+
+---
