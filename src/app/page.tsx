@@ -186,27 +186,27 @@ export default function LandingPage() {
   return (
     <div className="space-y-32 py-8 select-none">
       
-      {/* 1. Cinematic Opening Hero Sequence (100vh) */}
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center pt-8 max-w-4xl mx-auto overflow-hidden">
+      {/* 1. Cinematic Opening Hero Sequence */}
+      <section className="relative min-h-[80dvh] md:min-h-[90vh] flex flex-col items-center justify-center text-center pt-4 md:pt-8 max-w-4xl mx-auto overflow-hidden">
         {/* Volumetric Spotlight */}
         <div className="volumetric-spotlight" />
 
         <motion.div 
           style={{ opacity: heroOpacity, scale: heroScale }}
-          className="relative z-10 space-y-8 flex flex-col items-center"
+          className="relative z-10 space-y-6 md:space-y-8 flex flex-col items-center w-full px-2"
         >
           {/* Live Beacon Indicator */}
           <motion.div 
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-panel text-xs font-bold text-primary-cyan border border-primary-cyan/30 shadow-glow-cyan"
+            className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full glass-panel text-xs font-bold text-primary-cyan border border-primary-cyan/30 shadow-glow-cyan"
           >
             <span className="beacon-dot" />
-            <span className="uppercase tracking-widest text-[9px]">COHORT 4 ACTIVE — LATE NIGHT STUDIO</span>
+            <span className="uppercase tracking-widest text-[8px] sm:text-[9px]">COHORT 4 ACTIVE — LATE NIGHT STUDIO</span>
           </motion.div>
 
           {/* Sequential Focus Text Reveal */}
-          <div className="h-44 sm:h-52 flex items-center justify-center px-4">
+          <div className="min-h-[140px] sm:h-52 flex items-center justify-center px-2 w-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeHeroPhrase}
@@ -214,12 +214,12 @@ export default function LandingPage() {
                 animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 exit={{ opacity: 0, y: -30, filter: 'blur(10px)' }}
                 transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                className="space-y-2"
+                className="space-y-2 w-full"
               >
-                <h2 className="text-sm sm:text-base font-bold text-slate-400 uppercase tracking-widest">
+                <h2 className="text-xs sm:text-base font-bold text-slate-400 uppercase tracking-widest">
                   {heroPhrases[activeHeroPhrase].main}
                 </h2>
-                <h1 className={`text-4xl sm:text-7xl font-heading font-extrabold tracking-tight leading-none ${heroPhrases[activeHeroPhrase].glow}`}>
+                <h1 className={`text-3xl xs:text-4xl sm:text-6xl md:text-7xl font-heading font-extrabold tracking-tight leading-tight sm:leading-none ${heroPhrases[activeHeroPhrase].glow}`}>
                   {heroPhrases[activeHeroPhrase].sub}
                 </h1>
               </motion.div>
@@ -227,25 +227,26 @@ export default function LandingPage() {
           </div>
 
           {/* Subtext */}
-          <p className="text-xs sm:text-sm text-slate-400 max-w-lg mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-400 max-w-lg mx-auto leading-relaxed px-2">
             A futuristic learning platform. Push daily commits, build real-world software, unlock recruiter visibility, and build proof of work.
           </p>
 
           {/* Magnetic CTA Buttons */}
-          <div className="flex flex-col xs:flex-row items-center gap-4 pt-4">
-            <MagneticButton onClick={() => router.push('/dashboard')}>
-              <div className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary-purple via-primary-indigo to-primary-violet font-bold text-xs tracking-wider uppercase text-white shadow-glow-purple group">
+          <div className="flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 w-full xs:w-auto px-4">
+            <MagneticButton className="w-full xs:w-auto" onClick={() => router.push('/dashboard')}>
+              <div className="w-full xs:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 rounded-full bg-gradient-to-r from-primary-purple via-primary-indigo to-primary-violet font-bold text-xs tracking-wider uppercase text-white shadow-glow-purple group min-h-[44px]">
                 <span>Start Your Journey</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </MagneticButton>
             
             <MagneticButton 
+              className="w-full xs:w-auto"
               onClick={() => {
                 document.getElementById('story-1')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <div className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full glass-panel glass-panel-hover text-slate-300 hover:text-white font-bold text-xs tracking-wider uppercase">
+              <div className="w-full xs:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 rounded-full glass-panel glass-panel-hover text-slate-300 hover:text-white font-bold text-xs tracking-wider uppercase min-h-[44px]">
                 <span>Explore The Story ↓</span>
               </div>
             </MagneticButton>
@@ -267,7 +268,7 @@ export default function LandingPage() {
             ];
 
             return (
-              <div className="flex flex-col items-center justify-center text-center space-y-6 px-4">
+              <div className="flex flex-col items-center justify-center text-center space-y-4 sm:space-y-6 px-3">
                 <span className="text-[10px] font-bold text-primary-cyan uppercase tracking-widest">CHAPTER 01</span>
                 
                 <AnimatePresence mode="wait">
@@ -277,13 +278,13 @@ export default function LandingPage() {
                     animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                     exit={{ opacity: 0, scale: 1.1, filter: 'blur(12px)' }}
                     transition={{ duration: 0.4 }}
-                    className={`text-5xl sm:text-8xl font-heading font-black tracking-tight ${colors[step]}`}
+                    className={`text-4xl sm:text-8xl font-heading font-black tracking-tight ${colors[step]}`}
                   >
                     {phrases[step]}
                   </motion.h2>
                 </AnimatePresence>
 
-                <p className="text-xs sm:text-sm text-slate-400 max-w-md">
+                <p className="text-xs sm:text-sm text-slate-400 max-w-md px-2">
                   {step === 0 && "Consistency starts with a commitment to show up every single day."}
                   {step === 1 && "No fake tutorial projects. Build 60 real software components."}
                   {step === 2 && "Verifiable GitHub commits and public LinkedIn posts prove your craft."}
@@ -303,7 +304,7 @@ export default function LandingPage() {
             const phrases = ["START WITH ONE DAY.", "ONE", "ONE DAY", "DAY 01"];
 
             return (
-              <div className="flex flex-col items-center justify-center text-center space-y-8 px-4">
+              <div className="flex flex-col items-center justify-center text-center space-y-6 sm:space-y-8 px-4">
                 <span className="text-[10px] font-bold text-primary-purple uppercase tracking-widest">CHAPTER 02</span>
 
                 <AnimatePresence mode="wait">
@@ -346,21 +347,21 @@ export default function LandingPage() {
             const illuminatedCount = Math.max(1, Math.min(60, Math.floor(progress.get() * 65)));
 
             return (
-              <div className="flex flex-col items-center justify-center text-center space-y-8 px-4 max-w-3xl">
+              <div className="flex flex-col items-center justify-center text-center space-y-6 sm:space-y-8 px-3 max-w-3xl">
                 <div className="space-y-2">
                   <span className="text-[10px] font-bold text-primary-cyan uppercase tracking-widest">CHAPTER 03</span>
-                  <h2 className="text-3xl sm:text-5xl font-heading font-extrabold text-slate-100">
+                  <h2 className="text-2xl sm:text-5xl font-heading font-extrabold text-slate-100">
                     THEN BUILD A HABIT.
                   </h2>
                   <p className="text-xs text-slate-400">Watch your 60-day visual chain illuminate as you move forward.</p>
                 </div>
 
                 {/* 60-Day Habit Matrix — Linear / GitHub Grade Sleek Frame */}
-                <div className="relative p-6 sm:p-8 rounded-3xl bg-[#0B0C0E] border border-white/10 shadow-2xl overflow-hidden w-full max-w-4xl space-y-6">
+                <div className="relative p-4 sm:p-8 rounded-3xl bg-[#0B0C0E] border border-white/10 shadow-2xl overflow-hidden w-full max-w-4xl space-y-4 sm:space-y-6">
                   
                   {/* Header Bar */}
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-white/10 text-xs text-slate-300">
-                    <div className="flex items-center gap-2.5">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 sm:pb-4 border-b border-white/10 text-xs text-slate-300">
+                    <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                       <span className="font-mono text-xs font-bold uppercase tracking-wider text-slate-200">HABIT TRACKER</span>
                       <span className="text-slate-600">•</span>
@@ -368,8 +369,8 @@ export default function LandingPage() {
                     </div>
 
                     {/* Progress Bar & Percentage */}
-                    <div className="flex items-center gap-3 w-full sm:w-auto">
-                      <span className="font-mono text-xs text-slate-400 font-medium">{illuminatedCount} / 60 DAYS</span>
+                    <div className="flex items-center gap-2.5 w-full sm:w-auto">
+                      <span className="font-mono text-[11px] sm:text-xs text-slate-400 font-medium">{illuminatedCount} / 60 DAYS</span>
                       <div className="flex-1 sm:w-40 bg-slate-900 h-1.5 rounded-full overflow-hidden border border-white/5">
                         <motion.div 
                           className="h-full bg-emerald-400 rounded-full"
@@ -381,7 +382,7 @@ export default function LandingPage() {
                   </div>
 
                   {/* Clean Sleek Node Matrix */}
-                  <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-2 pt-1">
+                  <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-1.5 sm:gap-2 pt-1">
                     {Array.from({ length: 60 }).map((_, idx) => {
                       const dayNum = idx + 1;
                       const isLit = dayNum <= illuminatedCount;
@@ -395,7 +396,7 @@ export default function LandingPage() {
                           whileTap={{ scale: 0.95 }}
                           className={`relative aspect-square rounded-xl transition-all duration-200 flex items-center justify-center text-xs font-mono font-bold cursor-pointer border ${
                             isCurrent
-                              ? 'bg-white text-slate-950 border-white ring-4 ring-white/20 font-black shadow-lg scale-105 z-10'
+                              ? 'bg-white text-slate-950 border-white ring-2 sm:ring-4 ring-white/20 font-black shadow-lg scale-105 z-10'
                               : isLit
                                 ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:border-emerald-400/60'
                                 : isMilestone
@@ -416,19 +417,19 @@ export default function LandingPage() {
                   </div>
 
                   {/* Minimal Legend Line */}
-                  <div className="flex flex-wrap items-center justify-between pt-4 border-t border-white/10 text-[11px] font-mono text-slate-400">
-                    <div className="flex items-center gap-4">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-3 sm:pt-4 border-t border-white/10 text-[10px] sm:text-[11px] font-mono text-slate-400">
+                    <div className="flex flex-wrap items-center gap-3">
                       <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-[8px]">✓</span> Verified Code</span>
-                      <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded bg-white text-black font-extrabold flex items-center justify-center text-[8px]">●</span> Current Target</span>
+                      <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded bg-white text-black font-extrabold flex items-center justify-center text-[8px]">●</span> Target</span>
                       <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded bg-slate-900 border border-slate-800 text-slate-600 flex items-center justify-center text-[8px]">○</span> Upcoming</span>
                     </div>
 
-                    <span className="text-slate-500">60-DAY PORTFOLIO ENGINE</span>
+                    <span className="text-slate-500 text-[9px] sm:text-[11px]">60-DAY PORTFOLIO ENGINE</span>
                   </div>
 
                 </div>
 
-                <p className="text-xs font-mono font-medium text-slate-400">
+                <p className="text-[11px] sm:text-xs font-mono font-medium text-slate-400">
                   {illuminatedCount} / 60 Days Complete — Keep Shipping Production Code
                 </p>
               </div>
@@ -704,10 +705,10 @@ export default function LandingPage() {
 
         {/* Render 3D Stacked Deck or Grid View */}
         {deckViewMode === 'stack' ? (
-          <div className="relative min-h-[340px] flex flex-col items-center justify-center py-6">
+          <div className="relative min-h-[360px] sm:min-h-[340px] flex flex-col items-center justify-center py-4 sm:py-6">
             
             {/* Stacked Cards Container */}
-            <div className="relative w-full max-w-lg h-[240px] flex items-center justify-center">
+            <div className="relative w-full max-w-lg h-[270px] sm:h-[240px] flex items-center justify-center">
               {features.map((f, i) => {
                 const Icon = f.icon;
                 
@@ -741,7 +742,7 @@ export default function LandingPage() {
                       stiffness: 240,
                       damping: 24,
                     }}
-                    className={`absolute inset-0 p-6 sm:p-8 rounded-3xl border flex flex-col justify-between cursor-pointer backdrop-blur-2xl transition-shadow ${
+                    className={`absolute inset-0 p-4 sm:p-8 rounded-3xl border flex flex-col justify-between cursor-pointer backdrop-blur-2xl transition-shadow ${
                       isTop
                         ? 'bg-gradient-to-br from-bg-dark via-slate-950 to-bg-dark border-primary-cyan/50 shadow-glass-glow shadow-glow-cyan'
                         : isSecond

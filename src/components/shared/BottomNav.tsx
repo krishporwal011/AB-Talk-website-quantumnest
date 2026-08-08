@@ -16,8 +16,8 @@ export default function BottomNav() {
   ];
 
   return (
-    <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-sm block md:hidden select-none">
-      <div className="flex items-center justify-around px-3 py-2 rounded-full glass-panel shadow-glass-glow bg-bg-dark/85 backdrop-blur-2xl">
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-sm block md:hidden select-none pb-[env(safe-area-inset-bottom)]">
+      <div className="flex items-center justify-around px-3 py-2 rounded-full glass-panel shadow-glass-glow bg-bg-dark/90 backdrop-blur-2xl border border-white/10">
         {navItems.map((item) => {
           const isActive = item.path === '/' 
             ? pathname === '/' 

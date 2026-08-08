@@ -61,32 +61,32 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 w-full px-4 py-3 md:py-4 select-none">
-      <div className="mx-auto max-w-5xl flex items-center justify-between px-4 py-2.5 rounded-full glass-panel shadow-glass-glow">
+      <div className="mx-auto max-w-5xl flex items-center justify-between px-3 sm:px-4 py-2.5 rounded-full glass-panel shadow-glass-glow">
         
-        {/* Logo / Brand & Command Palette Search Trigger */}
+        {/* Logo / Brand */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* Brand Logo */}
           <button 
             onClick={() => router.push('/')}
-            className="flex items-center gap-2.5 font-heading font-extrabold text-base tracking-wide focus:outline-none group btn-tactile"
+            className="flex items-center gap-2 font-heading font-extrabold text-base tracking-wide focus:outline-none group btn-tactile"
           >
             <div className="flex items-center gap-1.5">
               <span className="beacon-dot" />
               <span className="gradient-text-electric text-glow-purple font-extrabold text-base sm:text-lg">ABTALKS</span>
             </div>
-            <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-indigo/20 text-[9px] font-bold text-primary-cyan uppercase tracking-wider border border-primary-purple/30">
+            <span className="hidden md:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-indigo/20 text-[9px] font-bold text-primary-cyan uppercase tracking-wider border border-primary-purple/30">
               <Sparkles className="w-2.5 h-2.5 text-primary-cyan" />
               <span>60D COHORT</span>
             </span>
           </button>
 
-          {/* Prominent High-Contrast Command Palette Search Trigger Button */}
+          {/* Desktop Command Palette Search Trigger Button */}
           <button
             onClick={() => {
               const event = new KeyboardEvent('keydown', { key: 'k', metaKey: true });
               window.dispatchEvent(event);
             }}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-primary-cyan/50 text-slate-200 hover:text-white shadow-glow-cyan text-xs font-mono btn-tactile hover:bg-slate-800 transition-all cursor-pointer"
+            className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-primary-cyan/50 text-slate-200 hover:text-white shadow-glow-cyan text-xs font-mono btn-tactile hover:bg-slate-800 transition-all cursor-pointer"
             title="Open Command Search Palette (⌘K)"
           >
             <Search className="w-3.5 h-3.5 text-primary-cyan animate-pulse" />
@@ -97,7 +97,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Navigation Menu Links (Desktop) */}
+        {/* Navigation Menu Links (Desktop Only) */}
         <nav className="hidden md:flex items-center gap-1 bg-slate-950/40 p-1 rounded-full border border-white/5">
           {[
             { label: 'Home', path: '/' },
@@ -134,25 +134,38 @@ export default function Navbar() {
         </nav>
 
         {/* User Stats & Interactive Widgets */}
-        <div className="flex items-center gap-1.5 sm:gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           
-          {/* Offline Warning Pill */}
+          {/* Mobile Search Icon Button (Triggers Cmd+K Palette on Mobile) */}
+          <button
+            onClick={() => {
+              const event = new KeyboardEvent('keydown', { key: 'k', metaKey: true });
+              window.dispatchEvent(event);
+            }}
+            aria-label="Search"
+            className="flex md:hidden items-center justify-center w-8 h-8 rounded-full glass-panel glass-panel-hover text-primary-cyan btn-tactile"
+            title="Search"
+          >
+            <Search className="w-4 h-4 text-primary-cyan" />
+          </button>
+
+          {/* Offline Warning Pill (Desktop/Tablet) */}
           {isOffline && (
             <motion.div 
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="flex items-center gap-1 px-2 py-1 rounded-full bg-accent-rose/20 text-[10px] font-bold text-accent-rose border border-accent-rose/40 animate-pulse shadow-glow-fire"
+              className="hidden sm:flex items-center gap-1 px-2 py-1 rounded-full bg-accent-rose/20 text-[10px] font-bold text-accent-rose border border-accent-rose/40 animate-pulse shadow-glow-fire"
             >
               <WifiOff className="w-3 h-3" />
-              <span className="hidden sm:inline uppercase tracking-wider">Offline</span>
+              <span className="uppercase tracking-wider">Offline</span>
             </motion.div>
           )}
 
-          {/* Streak Indicator Widget */}
+          {/* Streak Indicator Widget (Desktop) */}
           <motion.div 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-full cursor-pointer transition-all duration-300 border btn-tactile ${
+            className={`hidden md:flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-full cursor-pointer transition-all duration-300 border btn-tactile ${
               activeStreak > 0 
                 ? 'bg-accent-fire/15 text-accent-fire border-accent-fire/35 shadow-glow-fire' 
                 : 'bg-slate-900/70 text-slate-500 border-slate-800'
@@ -165,11 +178,11 @@ export default function Navbar() {
             <span className="text-[11px] sm:text-xs font-bold font-heading">{activeStreak}d</span>
           </motion.div>
 
-          {/* XP Badge Widget */}
+          {/* XP Badge Widget (Desktop) */}
           <motion.div 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-full bg-primary-indigo/20 text-primary-violet border border-primary-indigo/40 shadow-glow-purple cursor-pointer btn-tactile"
+            className="hidden md:flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-full bg-primary-indigo/20 text-primary-violet border border-primary-indigo/40 shadow-glow-purple cursor-pointer btn-tactile"
             onClick={() => router.push('/dashboard')}
             title={`Total XP: ${activeXp}`}
             aria-label={`Total XP: ${activeXp}`}
@@ -199,7 +212,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 12, scale: 0.95 }}
                   transition={{ type: 'spring', stiffness: 450, damping: 30 }}
-                  className="absolute right-0 mt-3 w-80 rounded-2xl glass-panel border border-white/10 p-3.5 shadow-glass-glow flex flex-col gap-3 bg-bg-dark/95 backdrop-blur-2xl"
+                  className="absolute right-0 mt-3 w-80 max-w-[calc(100vw-2rem)] rounded-2xl glass-panel border border-white/10 p-3.5 shadow-glass-glow flex flex-col gap-3 bg-bg-dark/95 backdrop-blur-2xl z-50"
                 >
                   <div className="flex items-center justify-between pb-2 border-b border-white/10">
                     <div className="flex items-center gap-2">

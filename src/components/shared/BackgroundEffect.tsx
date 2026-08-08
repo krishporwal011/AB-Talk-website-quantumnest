@@ -24,7 +24,10 @@ export default function BackgroundEffect() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
+    const isMobile = window.innerWidth < 768;
+
     const handleMouseMove = (e: MouseEvent) => {
+      if (isMobile) return; // Skip mouse tracking on touch devices
       mouseX = (e.clientX - window.innerWidth / 2) * 0.05;
       mouseY = (e.clientY - window.innerHeight / 2) * 0.05;
     };
@@ -32,14 +35,17 @@ export default function BackgroundEffect() {
     window.addEventListener('mousemove', handleMouseMove);
 
     const codeSymbols = ['{}', '</>', '=>', 'async', 'import', 'const', 'React', 'XP', '🔥', 'Next.js', 'state', 'props'];
-    const particles = Array.from({ length: 48 }).map(() => ({
+    const particleCount = isMobile ? 18 : 48;
+    const baseOpacity = isMobile ? 0.18 : 0.38;
+    
+    const particles = Array.from({ length: particleCount }).map(() => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       symbol: codeSymbols[Math.floor(Math.random() * codeSymbols.length)],
-      speedY: 0.25 + Math.random() * 0.4,
-      speedX: (Math.random() - 0.5) * 0.2,
-      opacity: 0.38 + Math.random() * 0.12, // 40-45% Opacity Range
-      size: 12 + Math.floor(Math.random() * 6),
+      speedY: (isMobile ? 0.15 : 0.25) + Math.random() * (isMobile ? 0.2 : 0.4),
+      speedX: (Math.random() - 0.5) * (isMobile ? 0.1 : 0.2),
+      opacity: baseOpacity + Math.random() * (isMobile ? 0.08 : 0.12),
+      size: (isMobile ? 10 : 12) + Math.floor(Math.random() * 5),
     }));
 
     const render = () => {
@@ -76,31 +82,32 @@ export default function BackgroundEffect() {
       {/* Base Dark Background */}
       <div className="absolute inset-0 bg-[#050505]" />
       
-      {/* Floating Canvas Particle Layer — Set to 40-45% Opacity */}
-      <canvas ref={canvasRef} className="absolute inset-0 opacity-45" />
+      {/* Floating Canvas Particle Layer — 20% on Mobile, 45% on Desktop */}
+      <canvas ref={canvasRef} className="absolute inset-0 opacity-20 md:opacity-45" />
 
-      {/* Atmospheric Glowing Color Blobs (40-45% Opacity) */}
+      {/* Atmospheric Glowing Color Blobs (Reduced on Mobile) */}
       <div 
-        className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full opacity-45 pointer-events-none animate-blob-1"
+        className="absolute -top-20 -left-20 sm:-top-40 sm:-left-40 w-[280px] h-[280px] sm:w-[500px] sm:h-[500px] rounded-full opacity-25 md:opacity-45 pointer-events-none animate-blob-1"
         style={{
           background: 'radial-gradient(circle, rgba(108, 99, 255, 0.55) 0%, transparent 70%)',
-          filter: 'blur(55px)',
+          filter: 'blur(45px)',
         }}
       />
       <div 
-        className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-40 pointer-events-none animate-blob-2"
+        className="absolute bottom-0 right-0 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] rounded-full opacity-20 md:opacity-40 pointer-events-none animate-blob-2"
         style={{
           background: 'radial-gradient(circle, rgba(6, 182, 212, 0.48) 0%, transparent 70%)',
-          filter: 'blur(65px)',
+          filter: 'blur(50px)',
         }}
       />
       <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-35 pointer-events-none animate-blob-3"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[700px] sm:h-[700px] rounded-full opacity-20 md:opacity-35 pointer-events-none animate-blob-3"
         style={{
           background: 'radial-gradient(circle, rgba(124, 58, 237, 0.42) 0%, transparent 70%)',
-          filter: 'blur(75px)',
+          filter: 'blur(60px)',
         }}
       />
     </div>
   );
 }
+

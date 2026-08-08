@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark h-full">
-      <body className="min-h-full flex flex-col bg-bg-darker text-slate-100 font-sans selection:bg-primary-indigo/40 selection:text-white pb-24 md:pb-6">
+      <body className="min-h-[100dvh] flex flex-col bg-bg-darker text-slate-100 font-sans selection:bg-primary-indigo/40 selection:text-white pb-28 md:pb-8 overflow-x-hidden">
         <ChallengeProvider>
           {/* Desktop Magnetic Custom Cursor */}
           <CustomCursor />
@@ -37,7 +37,7 @@ export default function RootLayout({
           {/* Main Navigation Header */}
           <Navbar />
           
-          <main className="flex-1 w-full max-w-5xl mx-auto px-4 md:px-6 relative z-10">
+          <main className="flex-1 w-full max-w-5xl mx-auto px-4 md:px-6 relative z-10 box-border min-w-0">
             {children}
           </main>
           

@@ -146,7 +146,7 @@ export default function CommandPalette() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md select-none"
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md select-none"
           >
             <motion.div 
               initial={{ scale: 0.94, y: 15 }}
@@ -154,15 +154,15 @@ export default function CommandPalette() {
               exit={{ scale: 0.94, y: 15 }}
               transition={{ type: 'spring', stiffness: 450, damping: 30 }}
               ref={containerRef}
-              className="w-full max-w-lg overflow-hidden rounded-3xl glass-panel border border-white/10 shadow-glass-glow flex flex-col max-h-[80vh] bg-bg-dark/95 backdrop-blur-2xl"
+              className="w-full max-w-lg overflow-hidden rounded-3xl glass-panel border border-white/10 shadow-glass-glow flex flex-col max-h-[85dvh] bg-bg-dark/95 backdrop-blur-2xl"
             >
               {/* Header input */}
-              <div className="flex items-center gap-3 px-4 py-3.5 border-b border-white/10 bg-slate-950/40">
-                <Command className="w-5 h-5 text-primary-purple animate-pulse" />
+              <div className="flex items-center gap-2.5 px-3.5 py-3 border-b border-white/10 bg-slate-950/40">
+                <Command className="w-4 h-4 sm:w-5 sm:h-5 text-primary-purple animate-pulse shrink-0" />
                 <input 
                   type="text"
-                  placeholder="Search tracks, jump pages, or toggle edge cases..."
-                  className="flex-1 bg-transparent text-xs sm:text-sm outline-none text-slate-100 placeholder-slate-500 font-medium"
+                  placeholder="Search tracks, jump pages, edge cases..."
+                  className="flex-1 bg-transparent text-xs sm:text-sm outline-none text-slate-100 placeholder-slate-500 font-medium min-w-0"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   onKeyDown={handleKeyDown}
@@ -170,9 +170,9 @@ export default function CommandPalette() {
                 />
                 <button 
                   onClick={() => setIsOpen(false)}
-                  className="text-[10px] text-slate-400 hover:text-slate-200 bg-slate-900 px-2 py-1 rounded-md border border-slate-800 font-mono"
+                  className="text-[10px] text-slate-400 hover:text-slate-200 bg-slate-900 px-2 py-1 rounded-md border border-slate-800 font-mono btn-tactile shrink-0"
                 >
-                  ESC
+                  CLOSE
                 </button>
               </div>
 

@@ -112,17 +112,17 @@ export default function DashboardPage() {
         </div>
 
         {/* Global XP & Streak Stats Pill */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-2xl glass-panel border border-white/10 shadow-glass">
-            <Flame className="w-4 h-4 fill-accent-fire text-accent-fire animate-pulse" />
+        <div className="flex items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
+          <div className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-2xl glass-panel border border-white/10 shadow-glass">
+            <Flame className="w-4 h-4 fill-accent-fire text-accent-fire animate-pulse shrink-0" />
             <div>
               <p className="text-[9px] text-slate-500 font-bold uppercase">Streak</p>
               <p className="text-xs font-bold text-slate-100">{streak} Days</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 px-4 py-2 rounded-2xl glass-panel border border-white/10 shadow-glass">
-            <Zap className="w-4 h-4 fill-primary-violet text-primary-violet" />
+          <div className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-3 sm:px-4 py-2 rounded-2xl glass-panel border border-white/10 shadow-glass">
+            <Zap className="w-4 h-4 fill-primary-violet text-primary-violet shrink-0" />
             <div>
               <p className="text-[9px] text-slate-500 font-bold uppercase">Total XP</p>
               <p className="text-xs font-bold text-slate-100">{xp} XP</p>
@@ -134,9 +134,9 @@ export default function DashboardPage() {
       {/* 2. Today's Mission Priority Banner */}
       <motion.div 
         variants={itemVariants}
-        className="p-6 rounded-3xl glass-panel border border-primary-cyan/30 relative overflow-hidden bg-gradient-to-r from-bg-dark via-slate-950 to-bg-dark shadow-glass-glow"
+        className="p-4 sm:p-6 rounded-3xl glass-panel border border-primary-cyan/30 relative overflow-hidden bg-gradient-to-r from-bg-dark via-slate-950 to-bg-dark shadow-glass-glow"
       >
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-6 relative z-10">
           <div className="space-y-2 max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-cyan/10 border border-primary-cyan/30 text-primary-cyan text-[10px] font-bold uppercase tracking-widest">
               <span>TODAY&apos;S MISSION — DAY 12</span>
@@ -151,7 +151,7 @@ export default function DashboardPage() {
 
           <button
             onClick={() => router.push('/day/12')}
-            className="px-6 py-3 rounded-full bg-gradient-to-r from-primary-purple via-primary-indigo to-primary-cyan font-bold text-xs uppercase tracking-wider text-white shadow-glow-cyan btn-tactile flex items-center gap-2 whitespace-nowrap"
+            className="w-full sm:w-auto px-6 py-3 rounded-full bg-gradient-to-r from-primary-purple via-primary-indigo to-primary-cyan font-bold text-xs uppercase tracking-wider text-white shadow-glow-cyan btn-tactile flex items-center justify-center gap-2 whitespace-nowrap min-h-[44px]"
           >
             <span>Enter Challenge #12</span>
             <ArrowRight className="w-4 h-4" />
@@ -160,22 +160,22 @@ export default function DashboardPage() {
       </motion.div>
 
       {/* 3. Grid Row: 60-Day Progress Node Map & Momentum Index */}
-      <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
 
         {/* 60-Day Visual Tracker Console */}
-        <div className="lg:col-span-2 relative p-6 rounded-3xl bg-[#0B0C0E] border border-white/10 space-y-4 shadow-2xl overflow-hidden">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10">
+        <div className="lg:col-span-2 relative p-4 sm:p-6 rounded-3xl bg-[#0B0C0E] border border-white/10 space-y-4 shadow-2xl overflow-hidden">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 border-b border-white/10">
             <div>
               <h3 className="text-sm font-bold text-slate-200">60-Day Habit Matrix</h3>
               <p className="text-[11px] text-slate-400 font-medium">Click any day node to enter challenge or view verified proof.</p>
             </div>
-            <span className="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
+            <span className="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full shrink-0">
               {completedDays.length} / 60 DONE ({Math.round((completedDays.length / 60) * 100)}%)
             </span>
           </div>
 
           {/* Clean Sleek Nodes Grid */}
-          <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-2 pt-1">
+          <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-12 gap-1.5 sm:gap-2 pt-1">
             {nodes.map((node) => {
               const isMilestone = [15, 30, 45, 60].includes(node.dayNum);
 
@@ -190,7 +190,7 @@ export default function DashboardPage() {
                   }}
                   className={`relative aspect-square rounded-xl text-xs font-mono font-bold flex items-center justify-center transition-all cursor-pointer border ${
                     node.isActive
-                      ? 'bg-white text-slate-950 border-white ring-4 ring-white/20 font-black shadow-lg scale-105 z-10'
+                      ? 'bg-white text-slate-950 border-white ring-2 sm:ring-4 ring-white/20 font-black shadow-lg scale-105 z-10'
                       : node.isDone
                         ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:border-emerald-400/60'
                         : isMilestone

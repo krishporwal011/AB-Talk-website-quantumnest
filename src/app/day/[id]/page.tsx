@@ -238,9 +238,9 @@ export default function ChallengePage({ params }: PageProps) {
       </div>
 
       {/* Challenge Title Banner */}
-      <div className="p-6 rounded-3xl glass-panel border border-white/10 space-y-4 bg-bg-dark/95 shadow-glass-glow">
-        <div className="flex items-center justify-between">
-          <span className="text-[10px] font-mono font-bold text-primary-cyan bg-primary-cyan/10 border border-primary-cyan/20 px-3 py-1 rounded-full uppercase tracking-wider shadow-glow-cyan">
+      <div className="p-4 sm:p-6 rounded-3xl glass-panel border border-white/10 space-y-4 bg-bg-dark/95 shadow-glass-glow">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <span className="text-[10px] font-mono font-bold text-primary-cyan bg-primary-cyan/10 border border-primary-cyan/20 px-3 py-1 rounded-full uppercase tracking-wider shadow-glow-cyan w-fit">
             DAY {id} / 60 — MOTION SYSTEM
           </span>
           <span className="text-xs text-accent-emerald font-bold flex items-center gap-1">
@@ -248,7 +248,7 @@ export default function ChallengePage({ params }: PageProps) {
           </span>
         </div>
 
-        <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-slate-100">
+        <h1 className="text-xl sm:text-3xl font-heading font-extrabold text-slate-100">
           Build a High-Performance Motion System
         </h1>
 
@@ -257,7 +257,7 @@ export default function ChallengePage({ params }: PageProps) {
         </p>
 
         {/* Resources list */}
-        <div className="pt-2 flex flex-wrap items-center gap-3">
+        <div className="pt-2 flex flex-wrap items-center gap-2 sm:gap-3">
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] font-bold text-slate-300 hover:text-white btn-tactile">
             <Youtube className="w-3.5 h-3.5 text-red-500" /> Watch Video Tutorial
           </a>
@@ -268,10 +268,10 @@ export default function ChallengePage({ params }: PageProps) {
       </div>
 
       {/* Sub-Task Checklist */}
-      <div className="p-6 rounded-3xl glass-panel border border-white/10 space-y-4 bg-bg-dark/95">
+      <div className="p-4 sm:p-6 rounded-3xl glass-panel border border-white/10 space-y-4 bg-bg-dark/95">
         <h3 className="text-sm font-bold text-slate-200">Task Completion Checklist</h3>
 
-        <div className="space-y-2.5">
+        <div className="space-y-2">
           {checklistItems.map((item) => {
             const isCompleted = checklist[item.id];
             return (
@@ -280,7 +280,7 @@ export default function ChallengePage({ params }: PageProps) {
                 type="button"
                 whileTap={{ scale: 0.98 }}
                 onClick={() => toggleChecklistItem(item.id)}
-                className={`w-full p-3.5 rounded-2xl border text-left flex items-start gap-3 transition-all ${
+                className={`w-full p-3 sm:p-3.5 rounded-2xl border text-left flex items-start gap-2.5 sm:gap-3 transition-all ${
                   isCompleted
                     ? 'bg-slate-900/60 border-slate-800 text-slate-400 line-through'
                     : 'bg-slate-950/80 border-slate-800 text-slate-200 hover:border-primary-purple/40'
@@ -299,7 +299,7 @@ export default function ChallengePage({ params }: PageProps) {
       </div>
 
       {/* Proof of Work Submission Form */}
-      <form onSubmit={handleSubmit(onFormSubmit)} className="p-6 rounded-3xl glass-panel border border-white/10 space-y-6 bg-bg-dark/95 shadow-glass-glow">
+      <form onSubmit={handleSubmit(onFormSubmit)} className="p-4 sm:p-6 rounded-3xl glass-panel border border-white/10 space-y-5 sm:space-y-6 bg-bg-dark/95 shadow-glass-glow">
         <div className="space-y-1">
           <h3 className="text-sm font-bold text-slate-200">Submit Proof of Work</h3>
           <p className="text-xs text-slate-400">Provide public URLs so your submission can be audited by AI and indexed for recruiters.</p>
